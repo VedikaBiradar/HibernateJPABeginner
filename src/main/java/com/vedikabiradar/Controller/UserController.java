@@ -1,5 +1,6 @@
 package com.vedikabiradar.Controller;
 
+import com.vedikabiradar.UserOperationsHQL.UserOperationsHQL;
 import com.vedikabiradar.model.UserOperations;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -16,8 +17,18 @@ public class UserController {
 //
 //        UserOperations.updateUser(session,3);
 //
-        UserOperations.deleteUser(session,4);
+//        UserOperations.deleteUser(session,4);
 
+//        UserOperationsHQL.findUserHql(factory,session);
+
+//        UserOperationsHQL.getRecordById(factory,session);
+
+//        UserOperationsHQL.getRecords(session);
+
+//        UserOperationsHQL.getMaxSalary(session);
+
+//        UserOperationsHQL.getmaxSalaryGroupBy();
+        UserOperationsHQL.namedQueryExample(session);
         factory.close();
         session.close();
     }
